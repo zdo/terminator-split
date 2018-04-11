@@ -28,19 +28,19 @@ optional arguments:
 ```
 
 ```shell
-terminator-split -m server1 server2 server3 server4
+terminator-split command1 command2 command3
 ```
 
 Note that the username can also be specified as part of the servername. Eg:
 
 ```shell
-terminator-split -m user1@server1 user2@server2 user3@server3 user4@server4
+terminator-split 'ssh user1@server1' 'ssh user2@server2 -p 500'
 ```
 
 ![](https://github.com/AlekseyChudov/terminator-split/blob/master/images/terminator-split-4.png?raw=true)
 
 ```shell
-terminator-split -m 8
+terminator-split 8
 ```
 
 ![](https://github.com/AlekseyChudov/terminator-split/blob/master/images/terminator-split-8.png?raw=true)
