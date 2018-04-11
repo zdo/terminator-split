@@ -86,6 +86,7 @@ class TerminatorSplit(object):
         parent = self._next_child()
         self._layout = {parent: {'parent': '', 'type': 'Window'}}
         self._split_layout(parent, self._args.hostname)
+        config['layouts'] = {}
         config['layouts']['default'] = self._layout
 
     def _next_child(self):
